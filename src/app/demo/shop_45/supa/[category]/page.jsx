@@ -3,8 +3,8 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'next/navigation';
 
-import Wrapper from '../../_wrapper/Shop_45.jsx';
-import Product_45 from '../../_components/Product_45.jsx';
+import Wrapper from '@/assets/wrappers/midterm/Shop_45';
+import Product_45 from '@/components/midterm/Product_45';
  
 const FetchShopByCategory_45 = () => {
     const [shop_45, setShop_45] = useState([]);

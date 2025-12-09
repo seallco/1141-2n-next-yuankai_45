@@ -8,7 +8,7 @@ const NavbarShopSupa_45 = () => {
   return (
     <Wrapper>
       <div className='header'>
-        <Link href='/demo/shop_45/node' className='logo-container'>
+        <Link href='/demo/shop_45/supa' className='logo-container'>
           <img src='/images/midterm/assets/crown.svg' />
         </Link>
         <div className='options'>

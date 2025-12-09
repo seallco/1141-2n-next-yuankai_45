@@ -3,24 +3,25 @@
 import {useState, useEffect} from 'react';
 import {useParams} from 'next/navigation';
 
-import Wrapper from '@/assets/wrappers/midterm/Shop_45';
-import Product_45 from '@/components/midterm/Product_45';
+import Wrapper from '../../_wrapper/Shop_45';
+import Product_45 from '../../_components/Product_45';
+import { supabase } from '@/db/clientSupabase';
  
 const FetchShopByCategory_45 = () => {
     const [shop_45, setShop_45] = useState([]);
     const params = useParams();
     const category = params.category;
-    console.log('category', category);
+    // console.log('category', category);
 
-    const FetchShopFromNode = async () => {
+    const FetchShopFromSupabase = async () => {
         try {
-            const response =await fetch(
-                `http://localhost:5001/api/shop_45/${category}`
-            );
-            const data = await response.json();
-            console.log('shop_45 data',data);
+          let { data, error } = await supabase
+  .from('category2_45')
+  .select('*, shop2_45(*)')
+  .eq('cname', category);
+            console.log('data',data[0].shop2_45);
             if (data.length !==0) {
-                setShop_45(data);
+                setShop_45(data[0].shop2_45);
             }
         }catch(err) {
             console.log(err);
@@ -28,7 +29,7 @@ const FetchShopByCategory_45 = () => {
     };
 
     useEffect(() => {
-        FetchShopFromNode();
+        FetchShopFromSupabase();
     },[]);
 
   return (

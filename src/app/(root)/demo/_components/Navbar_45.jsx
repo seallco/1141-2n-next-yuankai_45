@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from '../assets/wrappers/Navbar_45';
+import Wrapper from '../_assets/wrapper/Navbar_45';
 // import { Link } from 'react-router-dom';
 import Link from 'next/link';
 
@@ -45,7 +45,7 @@ const Navbar_45 = () => {
                       <Link href='#'>W6-BlogSupa_45</Link>
                     </li>
                     <li className='menu-item'>
-                      <Link href='/localjson2_45'>w7-BlogLoaclJson2_45</Link>
+                      <Link href='/demo/blog_45/localjson2_45'>w7-BlogLoaclJson2_45</Link>
                     </li>
                     <li className='menu-item'>
                       <Link href='/demo/shop_45/node'>W11-ShopNode_45</Link>

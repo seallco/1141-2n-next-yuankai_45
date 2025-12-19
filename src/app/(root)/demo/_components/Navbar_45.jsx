@@ -53,6 +53,15 @@ const Navbar_45 = () => {
                     <li className='menu-item'>
                       <Link href='/demo/shop_45/supa'>W12-ShopSupa_45</Link>
                     </li>
+                    <li className='menu-item'>
+                      <Link href='/demo/blog_45/localjson2_45'>W13-BlogLocalJson2_45</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link href='/demo/blog_45/localjson2_context_45'>w14-BlogLJ2Context_45</Link>
+                    </li>
+                    <li className='menu-item'>
+                      <Link href='/demo/grocery_45'>w14-Grocery_45</Link>
+                    </li>
                   </ul>
                 </div>
               </li>

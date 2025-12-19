@@ -3,7 +3,7 @@
 import{ useState} from 'react';
 
 import blogData_45 from '../../_assets/data/blogData.json';
-import Blog2_45 from '../../_components/Blog2_45';
+import Blog2_45 from '../localjson2_context_45/_components/Blog2_45';
 import Wrapper from '../../_assets/wrapper/Blog2_45';
 import Alert_45 from '../../_components/Alert_45';
 
